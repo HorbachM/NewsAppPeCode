@@ -140,7 +140,6 @@ extension UIImageView {
             }
             DispatchQueue.main.async {
                 self.image = UIImage(data: data!)
-                self.image.sizeToFit()
             }
             
         }
