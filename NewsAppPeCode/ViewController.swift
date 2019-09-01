@@ -100,8 +100,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.titleLabel.text = self.searchData?[indexPath.item].headline
         cell.descLabel.text = self.searchData?[indexPath.item].desc
         cell.authorLabel.text = self.searchData?[indexPath.item].author
-        cell.publishedLabel.text = self.articles?[indexPath.item].publishedAt
-        cell.imgView.downloadImage(from: ((self.articles?[indexPath.item].imageUrl)!)!)
+        cell.publishedLabel.text = self.searchData?[indexPath.item].publishedAt
+        cell.imgView.downloadImage(from: ((self.searchData?[indexPath.item].imageUrl)!)!)
         
         
         
